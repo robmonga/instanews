@@ -1,0 +1,22 @@
+// mixin for big phone breakpoint
+
+//deemed redundant except for maybe a tidying up requirement
+/* @mixin phone {
+    @media (min-width: $phone-width) {
+        @content;
+    }
+}*/
+// mixin for tablet breakpoint
+@mixin tablet {
+    @media (min-width: $tablet-width) {
+        @content;
+    }
+}
+
+// mixin for desktop breakpoint
+@mixin desktop {
+    @media (min-width: $desktop-width) {
+        @content;
+    }
+}
+

@@ -1,0 +1,7 @@
+# ignore system files
+.DS_Store
+.DS_Store?
+.Trashes
+
+#ignore npm packages
+node_modules/

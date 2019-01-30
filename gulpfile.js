@@ -18,7 +18,7 @@ gulp.task('sass', function () {
       browsers: ["last 2 versions"]
     })
     )
-    .pipe(gulp.dest('.build/css'))
+    .pipe(gulp.dest('./build/css'))
     .pipe(uglifycss())
     .pipe(rename({ extname: ".min.css" }))
     .pipe(gulp.dest("./build/css"));
@@ -61,7 +61,7 @@ gulp.task("browser-sync", function (done) {
     }
   });
   gulp
-    .watch(["build/css/*.css", "build/js/*.js"])
+    .watch(["build/css/*.css", "build/js/*.js", "index.html"])
     .on('change', browserSync.reload);
   done();
 });

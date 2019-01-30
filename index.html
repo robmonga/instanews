@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8" />
     <title>Instanews</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="stylesheet" href="/build/css/style.min.css" /> -->
     <link rel="stylesheet" href="/build/css/style.min.css" />
-</head>
-<body>
-    <H1>Instanews</H1>
-    <p>Welcome to instanews, have a dayyyyyy</p>
+  </head>
+  <body>
+    <header>
+      <div class="NYTLogo">
+        <img src="..\assets\images\nyt-logo.svg" alt="logo" />
+      </div>
+      <div class="dropdown">
+        <select name="Sections" id="Sections">
+          <option value="select">Select...</option>
+          <option value="business">Business</option>
+          <option value="automobiles">Automobiles</option>
+          <option value="movies">Movies</option>
+          <option value="world">World</option>
+          <option value="science">Science</option>
+        </select>
+      </div>
+    </header>
+    <section><div class="articles"></div></section>
+
+    <footer class="footer"><p>&copyCopyright 2019 INSTANEWS</p></footer>
     <script src="/js/jquery-3.3.1.js"></script>
     <script src="build/js/script.min.js"></script>
-</body>
+  </body>
 </html>

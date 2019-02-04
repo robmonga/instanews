@@ -1,11 +1,12 @@
-// mixin for big phone breakpoint
+/* mixin for big phone breakpoint
+deemed redundant except for maybe a tidying up requirement
 
-//deemed redundant except for maybe a tidying up requirement
-/* @mixin phone {
+@mixin phone {
     @media (min-width: $phone-width) {
         @content;
     }
 }*/
+
 // mixin for tablet breakpoint
 @mixin tablet {
     @media (min-width: $tablet-width) {

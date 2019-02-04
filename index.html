@@ -4,16 +4,14 @@
     <meta charset="utf-8" />
     <title>Instanews</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- <link rel="stylesheet" href="/build/css/style.min.css" /> -->
     <link rel="stylesheet" href="/build/css/style.min.css" />
   </head>
   <body>
     <header>
-      <div class="NYTLogo">
-        <img src="..\assets\images\nyt-logo.svg" alt="logo" />
-      </div>
+      <img src="assets\images\nyt-logo.svg" alt="logo" />
       <div class="dropdown">
-        <select name="Sections" id="Sections">
+        <p>Choose a section:</p>
+        <select name="sections" id="sections">
           <option value="select">Select...</option>
           <option value="business">Business</option>
           <option value="automobiles">Automobiles</option>
@@ -23,9 +21,17 @@
         </select>
       </div>
     </header>
-    <section><div class="articles"></div></section>
+    <section>
+      <div class="articles">
+        <div class="voidspace">
+        </div>
+      </div>
+    </section>
 
-    <footer class="footer"><p>&copyCopyright 2019 INSTANEWS</p></footer>
+    <img src="/assets/images/ajax-loader.gif" alt="loading  " id="loader" />
+    <footer class="footer">
+      <p>&copyCopyright 2019 INSTANEWS</p>
+    </footer>
     <script src="/js/jquery-3.3.1.js"></script>
     <script src="build/js/script.min.js"></script>
   </body>

@@ -1,0 +1,29 @@
+header {
+  display: flex;  
+  flex-flow: column wrap;
+  align-items: center; 
+  text-align: center;
+  align-self: center;
+  p {
+    color: white;
+    padding: 5px;
+    }
+  img {
+    height: 20%;
+  }
+}
+@include tablet{
+    header {
+        flex-flow: nowrap;
+    }
+ 
+ }
+
+@include desktop {
+    header {
+        justify-content: flex-start;
+    }
+    .nytlogo {
+        margin: auto;
+    }
+}

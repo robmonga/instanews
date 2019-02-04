@@ -1,5 +1,47 @@
-@include tablet;
+#loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
 
 body {
     background: black;
+    height: 100vh;
+    text-decoration: 16px;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;  
+
+}
+
+.articles{
+    display: flex;
+    margin: 5px 0;
+    flex-wrap: wrap;
+    p{
+        margin-top: 80%;
+        padding-bottom: 5px;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+} 
+    
+a {
+        flex: 1 0 50%;
+        color: white;
+        height: auto;
+        width:auto;
+        text-decoration: none;
+        background-size: cover;
+    
+    }
+}
+
+
+
+
+@include desktop {
+   .articles a {
+        flex-flow: row;
+        flex:25%;
+    }
 }

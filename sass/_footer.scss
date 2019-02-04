@@ -1,4 +1,9 @@
-p {
-    font-family: 'Open Sans';
-    background: black;
+footer
+{   padding-top: 10px;
+    align-self: flex-end;
+    p {
+    // margin: 0vh 30%;
+    display: inline;
+    color: white;
+    }
 }

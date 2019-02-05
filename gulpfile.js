@@ -7,6 +7,9 @@ const terser = require('gulp-terser');
 const sass= require('gulp-sass');
 const autprefixer = require('gulp-autoprefixer');
 const prettyError = require('gulp-prettyerror');
+const babel = require("gulp-babel");
+const input = "js/script.js";
+const output = "dist";
 
 // Task to minify SASS
 gulp.task('sass', function () {
@@ -31,6 +34,15 @@ gulp.task('sass', function () {
     .pipe(rename({ extname: ".min.js"}))
     .pipe(gulp.dest("./build/js"))
   });
+
+// task to run babel
+gulp.task("babel", () => {
+  return gulp
+  .src(input)
+  .pipe(babel())
+  .pipe(gulp.dest(output));
+});
+
 // Task to watch for changes to CSS files
 gulp.task("watch", function (done) {
   gulp.watch("sass/*.scss", gulp.series("sass"));
